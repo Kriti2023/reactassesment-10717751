@@ -1,0 +1,26 @@
+.container-with-bg{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding-top: 1em; */
+}
+.container-with-bg div.input-field{
+    width: 100%;
+}
+.blog-title{
+    font-size: 5em;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.blog-body{
+    font-size: 2em;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+textarea.form-control.min-height-textarea {
+    min-height: calc(1.5em + 10rem + 2px)
+}

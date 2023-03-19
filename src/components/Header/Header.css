@@ -1,0 +1,200 @@
+.navigation-link li span{
+    color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.header-nav {
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8em;
+}
+.navbar-brand{
+    position: relative;
+}
+  .navbar-brand .css-blog-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-brand .css-blog-brand {
+    transition: 0.35s transform ease;
+    animation: spin 2.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  }
+  .navbar-brand .css-blog-brand div,
+  .css-blog-brand::before {
+    transition: 0.25s opacity ease;
+  }
+  .css-blog-brand:hover div,
+  .css-blog-brand:hover::before {
+    opacity: 0.8;
+  }
+  .css-blog-brand::before {
+    content: '';
+    background-color: #fff;
+    border-radius: 50%;
+    width: 0;
+  }
+  .navbar-brand .css-blog-brand div {
+    position: absolute;
+    perspective: 100px;
+  }
+  .navbar-brand .css-blog-brand div::before {
+    content: '';
+    display: block;
+    transform: rotateX(-70deg);
+    transform-origin: top center;
+    width: 30px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0/30px 30px 0 0;
+    animation: shrink 2.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  }
+  .navbar-brand .css-blog-brand div::before {
+    zoom: 0.3;
+  }
+  .css-blog-brand div:nth-child(2) {
+    transform: rotate(60deg);
+  }
+  .css-blog-brand div:nth-child(3) {
+    transform: rotate(120deg);
+  }
+  .css-blog-brand div:nth-child(4) {
+    transform: rotate(180deg);
+  }
+  .css-blog-brand div:nth-child(5) {
+    transform: rotate(240deg);
+  }
+  .css-blog-brand div:nth-child(6) {
+    transform: rotate(300deg);
+  }
+  @-moz-keyframes background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-webkit-keyframes background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-o-keyframes background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-moz-keyframes spin {
+    0% {
+      transform: rotate(0) scale(1);
+    }
+    50% {
+      transform: rotate(360deg) scale(0.4);
+    }
+    100% {
+      transform: rotate(720deg) scale(1);
+    }
+  }
+  @-webkit-keyframes spin {
+    0% {
+      transform: rotate(0) scale(1);
+    }
+    50% {
+      transform: rotate(360deg) scale(0.4);
+    }
+    100% {
+      transform: rotate(720deg) scale(1);
+    }
+  }
+  @-o-keyframes spin {
+    0% {
+      transform: rotate(0) scale(1);
+    }
+    50% {
+      transform: rotate(360deg) scale(0.4);
+    }
+    100% {
+      transform: rotate(720deg) scale(1);
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0) scale(1);
+    }
+    50% {
+      transform: rotate(360deg) scale(0.4);
+    }
+    100% {
+      transform: rotate(720deg) scale(1);
+    }
+  }
+  @-moz-keyframes shrink {
+    100%, 0% {
+      height: 380px;
+      width: 80px;
+    }
+    40% {
+      height: 0;
+    }
+  }
+  @-webkit-keyframes shrink {
+    100%, 0% {
+      height: 380px;
+      width: 80px;
+    }
+    40% {
+      height: 0;
+    }
+  }
+  @-o-keyframes shrink {
+    100%, 0% {
+      height: 380px;
+      width: 80px;
+    }
+    40% {
+      height: 0;
+    }
+  }
+  @keyframes shrink {
+    100%, 0% {
+      height: 380px;
+      width: 80px;
+    }
+    40% {
+      height: 0;
+    }
+  }
+  

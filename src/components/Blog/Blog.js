@@ -37,7 +37,7 @@ export default function Blog() {
   };
 
   return (
-    <Container>
+    <Container className="container-with-bg">
       <Row className="blog-row mt-5">
         {apiData?.map((ele) => (
           <Col md={4} key={ele.id}>
@@ -59,12 +59,14 @@ export default function Blog() {
                 </Button>
               </Card.Body>
               <Card.Footer>
-                <Card.Link></Card.Link>
+                <Card.Link>
+                  
+                </Card.Link>
               </Card.Footer>
             </Card>
           </Col>
         ))}
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose} centered >
           <Modal.Header closeButton></Modal.Header>
           <Modal.Body>
             <FloatingLabel

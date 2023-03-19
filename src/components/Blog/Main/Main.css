@@ -1,0 +1,31 @@
+body:has(div.main-banner){
+    overflow-x: hidden;
+}
+.container-with-bg{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conatiner-without-bg > .App{
+    background-image: none;
+}
+.main-banner img{
+    object-fit: contain;
+    max-width: 100%;
+}
+.main-banner h1{
+    font-size: 7em;
+    color: #ffffff;
+}
+.main-banner p{
+    font-size: 3em;
+    color: #ffffff;
+}
+.main-banner img {
+    object-fit: contain;
+    max-width: 100%;
+    position: absolute;
+    top: 8em;
+    left: calc(100% - 54em);
+}

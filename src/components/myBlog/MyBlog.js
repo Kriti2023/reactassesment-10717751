@@ -37,7 +37,7 @@ function MyBlog() {
   };
 
   return (
-    <Container>
+    <Container className="container-with-bg">
       <Row className="blog-row mt-5">
         {apimyData?.filter((user)=>user.userId===5).map((ele) => (
           <Col md={4} key={ele.id}>
