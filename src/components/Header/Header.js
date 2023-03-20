@@ -3,15 +3,17 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useNavigate } from "react-router";
 import "./Header.css";
+import { useState } from "react";
 
 function Header() {
   const navigate = useNavigate();
+  const [Loading, setLoading] = useState(false);
   return (
     <>
       <Navbar fixed className="header-nav">
         <Container>
           <Navbar.Brand onClick={() => {
-                  navigate("/Main");
+                  navigate("/");
                 }}>
             <div className="css-blog-brand">
               <div></div>

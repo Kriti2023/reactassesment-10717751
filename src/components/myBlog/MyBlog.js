@@ -10,14 +10,20 @@ import Modal from "react-bootstrap/Modal";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import { MyBlogCommentList } from "./MyBlogCommentList";
+import { useSelector,useDispatch } from "react-redux";
+import { fetchPostsSuccess,fetchPostsRequest } from "../api-redux";
+// const store = createStore(rootReducer, applyMiddleware(thunk));
 
 function MyBlog() {
   const [apimyData, setApimyData] = useState();
   const [mycomment, setmyComment] = useState();
-
+   const {posts,loading}=useSelector((state)=>state.myreducer)
+   const dispatch=useDispatch();
+    
   useEffect(() => {
+    dispatch(fetchPostsRequest())
     axios.get("https://jsonplaceholder.typicode.com/posts").then((response) => {
-      setApimyData(response.data);
+       dispatch(fetchPostsSuccess(response.data))
     });
   }, []);
   const [show, setCommentShow] = useState(false);
@@ -39,7 +45,7 @@ function MyBlog() {
   return (
     <Container className="container-with-bg">
       <Row className="blog-row mt-5">
-        {apimyData?.filter((user)=>user.userId===5).map((ele) => (
+        {posts.filter((user)=>user.userId===5).map((ele) => (
           <Col md={4} key={ele.id}>
             <Card className="mx-1 my-3">
               <Card.Body>
