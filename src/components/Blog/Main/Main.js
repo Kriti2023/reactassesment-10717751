@@ -10,7 +10,7 @@ export default function Main() {
   // }
   return (
     <div>
-      <Container className="conatiner-without-bg">
+      <Container className="conatiner-with-bg">
         <Row className="main-banner mt-5 pt-5">
           <Col md={6}>
             <h1>Welcome to Blog Page.</h1>

@@ -49,13 +49,13 @@ function CreateBlog() {
               <FloatingLabel
                 controlId="floatingTextarea"
                 label="Please enter Title"
-                className="mb-3"
+                className="mb-3" required
               >
                 <Form.Control
                   onChange={(e) => setTitle(e.target.value)}
                   as="input"
                   type="text"
-                  placeholder="Please enter Title "
+                  placeholder="Please enter Title " 
                 />
               </FloatingLabel>
             </div>
@@ -63,12 +63,12 @@ function CreateBlog() {
               <FloatingLabel
                 controlId="floatingTextarea"
                 label="PLease enter Blog"
-                className="mb-3"
+                className="mb-3" required
               >
                 <Form.Control
                   onChange={(e) => setBlogBody(e.target.value)}
                   as="textarea"
-                  placeholder="Please enter Blog " className="min-height-textarea"
+                  placeholder="Please enter Blog " className="min-height-textarea" 
                 />
               </FloatingLabel>
               <div className="d-flex align-items-center justify-content-center">

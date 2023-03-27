@@ -44,6 +44,9 @@ function MyBlog() {
 
   return (
     <Container className="container-with-bg">
+      <div>
+        <h3 className="text-white mt-5">Logged in as User-5</h3>
+      </div>
       <Row className="blog-row mt-5">
         {posts.filter((user)=>user.userId===5).map((ele) => (
           <Col md={4} key={ele.id}>
